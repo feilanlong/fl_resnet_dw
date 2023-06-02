@@ -1,0 +1,260 @@
+2023-06-02 18:17:37,315 - train - INFO - 尝试调用日志器
+2023-06-02 18:17:37,396 - train - INFO - macs, params = 346.241M, 1.463M
+2023-06-02 18:17:38,187 - train - INFO - ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+        (1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+        (1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+        (1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+        (1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=64)
+        (1): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128)
+        (1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128)
+        (1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=128)
+        (1): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=128)
+        (1): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=256)
+        (1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=256)
+        (1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=256)
+        (1): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=256)
+        (1): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512)
+        (1): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512)
+        (1): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512)
+        (1): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=7, stride=7, padding=0)
+  (fc): Linear(in_features=512, out_features=26, bias=True)
+)
+2023-06-02 18:17:38,214 - train - INFO - epoch 1/25开始训练！
+2023-06-02 18:17:38,215 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:18:00,648 - train - INFO - train epoch_loss: 1.4855  epoch_acc: 59.77% cost_time:22.431636333465576
+2023-06-02 18:18:20,231 - train - INFO - val epoch_loss: 1.2933  epoch_acc: 66.31% cost_time:19.582371473312378
+2023-06-02 18:18:20,239 - train - INFO - 目前验证集精度最好的是第1轮，精度是: 66.31%
+2023-06-02 18:18:20,240 - train - INFO - epoch 2/25开始训练！
+2023-06-02 18:18:20,240 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:18:40,937 - train - INFO - train epoch_loss: 0.5489  epoch_acc: 85.02% cost_time:20.69553303718567
+2023-06-02 18:18:59,921 - train - INFO - val epoch_loss: 0.9768  epoch_acc: 77.33% cost_time:18.982943534851074
+2023-06-02 18:18:59,928 - train - INFO - 目前验证集精度最好的是第2轮，精度是: 77.33%
+2023-06-02 18:18:59,928 - train - INFO - epoch 3/25开始训练！
+2023-06-02 18:18:59,929 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:19:20,945 - train - INFO - train epoch_loss: 0.3270  epoch_acc: 91.07% cost_time:21.015421152114868
+2023-06-02 18:19:40,364 - train - INFO - val epoch_loss: 1.1807  epoch_acc: 74.29% cost_time:19.41805410385132
+2023-06-02 18:19:40,365 - train - INFO - 目前验证集精度最好的是第2轮，精度是: 77.33%
+2023-06-02 18:19:40,365 - train - INFO - epoch 4/25开始训练！
+2023-06-02 18:19:40,366 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:20:01,210 - train - INFO - train epoch_loss: 0.2645  epoch_acc: 92.29% cost_time:20.843868732452393
+2023-06-02 18:20:21,517 - train - INFO - val epoch_loss: 0.8216  epoch_acc: 81.39% cost_time:20.305389404296875
+2023-06-02 18:20:21,524 - train - INFO - 目前验证集精度最好的是第4轮，精度是: 81.39%
+2023-06-02 18:20:21,524 - train - INFO - epoch 5/25开始训练！
+2023-06-02 18:20:21,524 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:20:42,169 - train - INFO - train epoch_loss: 0.1795  epoch_acc: 94.57% cost_time:20.643481731414795
+2023-06-02 18:21:01,380 - train - INFO - val epoch_loss: 0.5976  epoch_acc: 85.74% cost_time:19.209708213806152
+2023-06-02 18:21:01,387 - train - INFO - 目前验证集精度最好的是第5轮，精度是: 85.74%
+2023-06-02 18:21:01,387 - train - INFO - epoch 6/25开始训练！
+2023-06-02 18:21:01,388 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:21:22,165 - train - INFO - train epoch_loss: 0.1401  epoch_acc: 95.87% cost_time:20.77686071395874
+2023-06-02 18:21:41,203 - train - INFO - val epoch_loss: 0.8943  epoch_acc: 85.68% cost_time:19.036516189575195
+2023-06-02 18:21:41,204 - train - INFO - 目前验证集精度最好的是第5轮，精度是: 85.74%
+2023-06-02 18:21:41,204 - train - INFO - epoch 7/25开始训练！
+2023-06-02 18:21:41,205 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:22:01,885 - train - INFO - train epoch_loss: 0.1197  epoch_acc: 96.37% cost_time:20.679327487945557
+2023-06-02 18:22:20,918 - train - INFO - val epoch_loss: 0.7316  epoch_acc: 85.47% cost_time:19.032224893569946
+2023-06-02 18:22:20,919 - train - INFO - 目前验证集精度最好的是第5轮，精度是: 85.74%
+2023-06-02 18:22:20,920 - train - INFO - epoch 8/25开始训练！
+2023-06-02 18:22:20,920 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:22:41,749 - train - INFO - train epoch_loss: 0.0786  epoch_acc: 97.63% cost_time:20.82754373550415
+2023-06-02 18:23:00,745 - train - INFO - val epoch_loss: 0.8715  epoch_acc: 85.39% cost_time:18.995026111602783
+2023-06-02 18:23:00,746 - train - INFO - 目前验证集精度最好的是第5轮，精度是: 85.74%
+2023-06-02 18:23:00,746 - train - INFO - epoch 9/25开始训练！
+2023-06-02 18:23:00,747 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:23:21,489 - train - INFO - train epoch_loss: 0.0555  epoch_acc: 98.36% cost_time:20.740453481674194
+2023-06-02 18:23:40,489 - train - INFO - val epoch_loss: 0.8925  epoch_acc: 85.06% cost_time:18.999779224395752
+2023-06-02 18:23:40,490 - train - INFO - 目前验证集精度最好的是第5轮，精度是: 85.74%
+2023-06-02 18:23:40,491 - train - INFO - epoch 10/25开始训练！
+2023-06-02 18:23:40,491 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:24:01,232 - train - INFO - train epoch_loss: 0.0568  epoch_acc: 98.23% cost_time:20.739205360412598
+2023-06-02 18:24:20,197 - train - INFO - val epoch_loss: 0.7623  epoch_acc: 86.54% cost_time:18.964844465255737
+2023-06-02 18:24:20,204 - train - INFO - 目前验证集精度最好的是第10轮，精度是: 86.54%
+2023-06-02 18:24:20,205 - train - INFO - epoch 11/25开始训练！
+2023-06-02 18:24:20,205 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:24:40,931 - train - INFO - train epoch_loss: 0.0385  epoch_acc: 98.85% cost_time:20.724283695220947
+2023-06-02 18:24:59,812 - train - INFO - val epoch_loss: 0.7295  epoch_acc: 86.38% cost_time:18.879968643188477
+2023-06-02 18:24:59,812 - train - INFO - 目前验证集精度最好的是第10轮，精度是: 86.54%
+2023-06-02 18:24:59,813 - train - INFO - epoch 12/25开始训练！
+2023-06-02 18:24:59,814 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:25:20,493 - train - INFO - train epoch_loss: 0.0324  epoch_acc: 99.04% cost_time:20.67803978919983
+2023-06-02 18:25:39,609 - train - INFO - val epoch_loss: 0.7387  epoch_acc: 86.58% cost_time:19.11526346206665
+2023-06-02 18:25:39,616 - train - INFO - 目前验证集精度最好的是第12轮，精度是: 86.58%
+2023-06-02 18:25:39,617 - train - INFO - epoch 13/25开始训练！
+2023-06-02 18:25:39,617 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:26:00,362 - train - INFO - train epoch_loss: 0.0252  epoch_acc: 99.32% cost_time:20.744043111801147
+2023-06-02 18:26:19,354 - train - INFO - val epoch_loss: 0.8121  epoch_acc: 85.93% cost_time:18.991059064865112
+2023-06-02 18:26:19,355 - train - INFO - 目前验证集精度最好的是第12轮，精度是: 86.58%
+2023-06-02 18:26:19,355 - train - INFO - epoch 14/25开始训练！
+2023-06-02 18:26:19,356 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:26:40,020 - train - INFO - train epoch_loss: 0.0193  epoch_acc: 99.43% cost_time:20.66298747062683
+2023-06-02 18:26:58,958 - train - INFO - val epoch_loss: 0.6476  epoch_acc: 87.40% cost_time:18.93771767616272
+2023-06-02 18:26:58,965 - train - INFO - 目前验证集精度最好的是第14轮，精度是: 87.40%
+2023-06-02 18:26:58,965 - train - INFO - epoch 15/25开始训练！
+2023-06-02 18:26:58,965 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:27:19,630 - train - INFO - train epoch_loss: 0.0299  epoch_acc: 99.09% cost_time:20.664713621139526
+2023-06-02 18:27:38,926 - train - INFO - val epoch_loss: 0.6898  epoch_acc: 87.44% cost_time:19.294516563415527
+2023-06-02 18:27:38,933 - train - INFO - 目前验证集精度最好的是第15轮，精度是: 87.44%
+2023-06-02 18:27:38,933 - train - INFO - epoch 16/25开始训练！
+2023-06-02 18:27:38,934 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:27:59,650 - train - INFO - train epoch_loss: 0.0238  epoch_acc: 99.26% cost_time:20.71544647216797
+2023-06-02 18:28:18,784 - train - INFO - val epoch_loss: 0.7814  epoch_acc: 86.25% cost_time:19.133609533309937
+2023-06-02 18:28:18,785 - train - INFO - 目前验证集精度最好的是第15轮，精度是: 87.44%
+2023-06-02 18:28:18,785 - train - INFO - epoch 17/25开始训练！
+2023-06-02 18:28:18,786 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:28:39,562 - train - INFO - train epoch_loss: 0.0155  epoch_acc: 99.51% cost_time:20.775695085525513
+2023-06-02 18:28:58,686 - train - INFO - val epoch_loss: 0.8345  epoch_acc: 87.36% cost_time:19.122863054275513
+2023-06-02 18:28:58,686 - train - INFO - 目前验证集精度最好的是第15轮，精度是: 87.44%
+2023-06-02 18:28:58,687 - train - INFO - epoch 18/25开始训练！
+2023-06-02 18:28:58,687 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:29:19,420 - train - INFO - train epoch_loss: 0.0128  epoch_acc: 99.66% cost_time:20.731974124908447
+2023-06-02 18:29:38,749 - train - INFO - val epoch_loss: 0.9052  epoch_acc: 86.56% cost_time:19.32839012145996
+2023-06-02 18:29:38,749 - train - INFO - 目前验证集精度最好的是第15轮，精度是: 87.44%
+2023-06-02 18:29:38,750 - train - INFO - epoch 19/25开始训练！
+2023-06-02 18:29:38,750 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:29:59,522 - train - INFO - train epoch_loss: 0.0112  epoch_acc: 99.74% cost_time:20.771448850631714
+2023-06-02 18:30:18,947 - train - INFO - val epoch_loss: 1.0360  epoch_acc: 85.91% cost_time:19.423360347747803
+2023-06-02 18:30:18,947 - train - INFO - 目前验证集精度最好的是第15轮，精度是: 87.44%
+2023-06-02 18:30:18,948 - train - INFO - epoch 20/25开始训练！
+2023-06-02 18:30:18,948 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:30:39,678 - train - INFO - train epoch_loss: 0.0109  epoch_acc: 99.73% cost_time:20.728646755218506
+2023-06-02 18:30:58,952 - train - INFO - val epoch_loss: 1.1235  epoch_acc: 85.72% cost_time:19.27298140525818
+2023-06-02 18:30:58,952 - train - INFO - 目前验证集精度最好的是第15轮，精度是: 87.44%
+2023-06-02 18:30:58,953 - train - INFO - epoch 21/25开始训练！
+2023-06-02 18:30:58,954 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:31:19,737 - train - INFO - train epoch_loss: 0.0069  epoch_acc: 99.82% cost_time:20.782914638519287
+2023-06-02 18:31:39,064 - train - INFO - val epoch_loss: 0.9089  epoch_acc: 87.14% cost_time:19.325823307037354
+2023-06-02 18:31:39,065 - train - INFO - 目前验证集精度最好的是第15轮，精度是: 87.44%
+2023-06-02 18:31:39,065 - train - INFO - epoch 22/25开始训练！
+2023-06-02 18:31:39,066 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:31:59,926 - train - INFO - train epoch_loss: 0.0103  epoch_acc: 99.69% cost_time:20.85972785949707
+2023-06-02 18:32:19,310 - train - INFO - val epoch_loss: 0.8476  epoch_acc: 87.77% cost_time:19.383139610290527
+2023-06-02 18:32:19,317 - train - INFO - 目前验证集精度最好的是第22轮，精度是: 87.77%
+2023-06-02 18:32:19,318 - train - INFO - epoch 23/25开始训练！
+2023-06-02 18:32:19,318 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:32:40,024 - train - INFO - train epoch_loss: 0.0072  epoch_acc: 99.78% cost_time:20.704899787902832
+2023-06-02 18:32:58,955 - train - INFO - val epoch_loss: 1.0006  epoch_acc: 86.89% cost_time:18.930277347564697
+2023-06-02 18:32:58,956 - train - INFO - 目前验证集精度最好的是第22轮，精度是: 87.77%
+2023-06-02 18:32:58,956 - train - INFO - epoch 24/25开始训练！
+2023-06-02 18:32:58,957 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:33:19,746 - train - INFO - train epoch_loss: 0.0046  epoch_acc: 99.87% cost_time:20.78888511657715
+2023-06-02 18:33:38,736 - train - INFO - val epoch_loss: 0.8545  epoch_acc: 87.48% cost_time:18.989128589630127
+2023-06-02 18:33:38,737 - train - INFO - 目前验证集精度最好的是第22轮，精度是: 87.77%
+2023-06-02 18:33:38,737 - train - INFO - epoch 25/25开始训练！
+2023-06-02 18:33:38,738 - train - INFO - =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+2023-06-02 18:33:59,547 - train - INFO - train epoch_loss: 0.0086  epoch_acc: 99.69% cost_time:20.80848002433777
+2023-06-02 18:34:18,670 - train - INFO - val epoch_loss: 1.0479  epoch_acc: 86.56% cost_time:19.121663570404053
+2023-06-02 18:34:18,671 - train - INFO - 目前验证集精度最好的是第22轮，精度是: 87.77%
+2023-06-02 18:34:18,700 - train - INFO - 【训练结束】目前验证集精度最好的是第22轮，精度是: 87.77%
